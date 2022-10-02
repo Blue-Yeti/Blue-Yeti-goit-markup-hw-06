@@ -1115,6 +1115,7 @@ margin-bottom: 20px;
     background-color: transparent;
     border: 2px solid var(--clr-primary);
 
+    outline-width: 2px;
     transition: border-color 250ms linear,
                 outline-color 250ms linear,
                 background-image 250ms linear;
@@ -1129,9 +1130,13 @@ input[type="checkbox"]:checked + .modal-window__accept-span::before{
     border: none;
 }
 
-.modal-window input[type="checkbox"]:focus + .modal-window__accept-span::before,
+.modal-window input[type="checkbox"]:focus + .modal-window__accept-span::before{
+    outline-style: double;
+    outline-width: 2px;
+    outline-color: var(--clr-accent);
+}
+
 .modal-window input[type="checkbox"]:active + .modal-window__accept-span::before{
-    border: 2px solid var(--clr-accent);
     outline-color: var(--clr-accent);
 }
 
