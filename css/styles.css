@@ -1074,6 +1074,10 @@ margin-bottom: 20px;
     background-color: #2196F3;
 }
 
+.checkbox-label{
+    margin-top: 20px;
+}
+
 .modal-window__accept-span{
     font-size: 14px;
     line-height: 1.71;
@@ -1095,3 +1099,4 @@ margin-bottom: 20px;
     border-radius: 4px;
 
 }
+
