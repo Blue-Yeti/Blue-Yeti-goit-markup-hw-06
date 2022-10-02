@@ -391,7 +391,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <form>
+        <form class="modal-window__form">
           <p class="modal-form-text">Залиште свої дані, ми вам передзвонимо</p>
           <label>
             <p>name</p>
@@ -424,11 +424,13 @@
             <p>Коментар</p>
             <textarea name="modal-textaria" rows="10" placeholder="Введіть текст"></textarea>
           </label>
+
           <label>
             <input type="checkbox" name="" required />
-            <span> Погоджуюся з розсилкою та приймаю <a href="#">Умови договору </a></span>
+            <span class="modal-window__accept-span"> Погоджуюся з розсилкою та приймаю <a href="#">Умови договору </a></span>
           </label>
-          <button class="modal-submit" type="submit">Відправити</button>
+
+          <button class="modal-window__submit-btn" type="submit">Відправити</button>
         </form>
         <button class="modal-window__close-btn" data-modal-close>
           <svg class="modal-window__svg" width="11px" height="11px">
