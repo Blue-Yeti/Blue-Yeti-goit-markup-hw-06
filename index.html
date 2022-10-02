@@ -391,6 +391,45 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
+        <form>
+          <p class="modal-form-text">Залиште свої дані, ми вам передзвонимо</p>
+          <label>
+            <p>name</p>
+            <div class="modal-form__input-wrapper">
+              <input type="text" name="name" autocomplete="off" />
+              <svg class="modal-form__svg" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label>
+            <p>telephone</p>
+            <div class="modal-form__input-wrapper">
+              <input type="tel" name="tel-num" autocomplete="off" />
+              <svg class="modal-form__svg" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+          <label>
+            <p>Email</p>
+            <div class="modal-form__input-wrapper">
+              <input type="email" name="email" autocomplete="off" />
+              <svg class="modal-form__svg" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
+          <label>
+            <p>Коментар</p>
+            <textarea name="modal-textaria" rows="10" placeholder="Введіть текст"></textarea>
+          </label>
+          <label>
+            <input type="checkbox" name="" required />
+            <span> Погоджуюся з розсилкою та приймаю <a href="#">Умови договору </a></span>
+          </label>
+          <button class="modal-submit" type="submit">Відправити</button>
+        </form>
         <button class="modal-window__close-btn" data-modal-close>
           <svg class="modal-window__svg" width="11px" height="11px">
             <use href="./images/icons.svg#icon-close"></use>
