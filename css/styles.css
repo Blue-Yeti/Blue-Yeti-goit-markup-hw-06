@@ -887,11 +887,16 @@ margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     outline: transparent;
+    color: var(--clr-border);
+    padding-left: 16px;
+    font-weight: normal;
 }
 
 .newsletter_text-field::placeholder{
-    padding-left: 16px;
     font-size: 16px;
+
+    font-weight: 400;
+
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
 }
