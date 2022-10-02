@@ -928,6 +928,9 @@ margin-bottom: 20px;
     border-radius: 4px;
     border: none;
     cursor: pointer;
+
+    transition: background-color 250ms linear ;
+
 }
 
 .newsletter_btn-suscribe::after{
@@ -943,7 +946,11 @@ margin-bottom: 20px;
     background-image: url(../images/send.svg);
     background-repeat: no-repeat;
 
+}
 
+.newsletter_btn-suscribe:active, 
+.newsletter_btn-suscribe:focus{
+    background-color: #188CE8;
 }
 
 .modal-window__form{
@@ -1102,7 +1109,8 @@ margin-bottom: 20px;
     border: 2px solid var(--clr-primary);
 
     transition: border-color 250ms linear,
-                outline-color 250ms linear;
+                outline-color 250ms linear,
+                background-image 250ms linear;
 }
 
 input[type="checkbox"]:checked + .modal-window__accept-span::before{
@@ -1132,6 +1140,10 @@ input[type="checkbox"]:checked + .modal-window__accept-span::before{
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
+    transition: background-color 250ms linear;
 }
 
+.modal-window__submit-btn:active, 
+.modal-window__submit-btn:focus{
+    background-color: #188CE8;
+}
