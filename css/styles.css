@@ -858,3 +858,50 @@ fill: var(--clr-white);
     color: var(--clr-accent);
     outline: none;
 }
+
+.newsletter{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    margin-left: 93px;
+    width: 100%;
+}
+
+.newsletter p{
+margin-bottom: 20px;
+}
+
+.newsletter p{
+    margin-bottom: 20px;
+    }
+
+.newsletter__flex-container{
+    display: flex;
+    }
+.newsletter_text-field{
+    height: 50px;
+    flex-grow: 1;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: transparent;
+}
+
+.newsletter_text-field::placeholder{
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+.newsletter_btn-suscribe{
+    min-width: 200px;
+    height: 50px;
+    background-color: var(--clr-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    border: none;
+}
