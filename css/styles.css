@@ -949,6 +949,7 @@ margin-bottom: 20px;
 .modal-window__form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -1075,6 +1076,7 @@ margin-bottom: 20px;
 }
 
 .checkbox-label{
+    text-align: center;
     margin-top: 20px;
 }
 
