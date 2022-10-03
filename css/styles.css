@@ -906,7 +906,8 @@ margin-bottom: 20px;
 
 .newsletter_text-field{
     height: 50px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    width: 358px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -1140,7 +1141,6 @@ margin-bottom: 20px;
     background-color: transparent;
     border: 2px solid var(--clr-primary);
 
-    outline-width: 2px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1155,13 +1155,11 @@ input[type="checkbox"]:checked + .modal-window__accept-span::before{
     background-repeat: no-repeat;
     background-position: center;
     
-    border: none;
 }
 
 .modal-window input[type="checkbox"]:focus + .modal-window__accept-span::before{
-    outline-style: double;
-    outline-width: 2px;
     outline-color: var(--clr-accent);
+    border-color: var(--clr-accent);
 }
 
 .modal-window input[type="checkbox"]:active + .modal-window__accept-span::before{
@@ -1170,6 +1168,8 @@ input[type="checkbox"]:checked + .modal-window__accept-span::before{
 
 .modal-window a{
     color: var(--clr-accent);
+    border-color: var(--clr-accent);
+
 }
 
 .modal-window__submit-btn{
