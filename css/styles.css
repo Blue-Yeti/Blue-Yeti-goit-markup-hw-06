@@ -339,6 +339,20 @@ body {
 /*====================================*/
 /* COMPONENTS */
 /*====================================*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .container{
     width: 1200px;
     padding-left: 15px ;
@@ -889,16 +903,20 @@ margin-bottom: 20px;
 .newsletter__flex-container{
     display: flex;
     }
+
 .newsletter_text-field{
     height: 50px;
     flex-grow: 1;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    outline: transparent;
+    outline: var(--clr-accent);
     color: var(--clr-border);
     padding-left: 16px;
     font-weight: normal;
+
+    transition: outline-color 250ms var(--main-transition);
+
 }
 
 .newsletter_text-field::placeholder{
@@ -908,6 +926,12 @@ margin-bottom: 20px;
 
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter_text-field:focus,
+.newsletter_text-field:active {
+    border-color: var(--clr-accent);
+    outline: var(--clr-accent) thick;
 }
 
 .newsletter_btn-suscribe{
@@ -1084,7 +1108,8 @@ margin-bottom: 20px;
     display: inline-block;
     width: 16px;
     height: 15px;
-    opacity: 0;
+    /* opacity: 0; */
+    appearance: none;
     background-color: #2196F3;
 }
 
@@ -1125,7 +1150,10 @@ input[type="checkbox"]:checked + .modal-window__accept-span::before{
     content: '';
     background-color: #2196F3;
     background-image: url(../images/check.svg);
+    /* background-image: url(../images/icons.svg#icon-fb); */
+    background-size: 11px 8px;
     background-repeat: no-repeat;
+    background-position: center;
     
     border: none;
 }
